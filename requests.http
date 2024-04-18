@@ -1,0 +1,11 @@
+### Get exchange rate
+GET http://localhost:3000/users/fxrate
+content-type: application/json 
+
+{
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "amount": "25.25"
+}
+
+

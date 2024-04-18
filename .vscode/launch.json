@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start services dev",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "start:debug"],
+      "stopOnEntry": true,
+      "sourceMaps": true,
+      "autoAttachChildProcesses": true,
+      "showAsyncStacks": true,
+      "smartStep": true
+    },
+    {
+      "name": "Integration tests debug",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "test:e2e:watch"],
+      "stopOnEntry": true,
+      "sourceMaps": true,
+      "autoAttachChildProcesses": true,
+      "showAsyncStacks": true,
+      "smartStep": true
+    }
+  ]
+}
